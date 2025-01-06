@@ -1,9 +1,8 @@
-//import 'package:demoproject/page_navigator/second_page.dart';
+import 'package:myproject1/page_navigator/second_page.dart';
 import 'package:flutter/material.dart';
 
-class Firstpage extends StatelessWidget {
-  const Firstpage({super.key});
-
+class FirstPage extends StatelessWidget {
+  const FirstPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,7 +10,15 @@ class Firstpage extends StatelessWidget {
         title: const Text('First Page'),
         backgroundColor: Colors.orange,
       ),
-      body: const Center(),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const SecondPage()),
+          ),
+          child: const Text('Second Page >'),
+        ),
+      ),
     );
   }
 }
