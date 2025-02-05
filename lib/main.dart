@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myproject1/page_answer/answer_portol.dart';
+//import 'package:myproject1/page_answer/answer_portol.dart';
+import 'package:myproject1/from input/frominput.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const OptionAnswerPage(),
+      home: const RegistrationForm(),
     );
   }
 }
